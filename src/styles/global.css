@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "./variables.css";
+@import "./animations.css";
+
+/* Base Resets & Global Visual Styling */
+html {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-navy);
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #FFF8EC;
+  color: #13233A;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Selection */
+::selection {
+  background-color: #FFD23F;
+  color: #13233A;
+}
+
+/* Texture overlay for subtle painted feel */
+.painted-texture {
+  background-image: radial-gradient(rgba(19, 35, 58, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

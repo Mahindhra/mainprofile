@@ -1,0 +1,139 @@
+/* Floating Cloud Animations */
+@keyframes float-cloud-slow {
+  0% {
+    transform: translateX(-15%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes float-cloud-medium {
+  0% {
+    transform: translateX(12%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(12%);
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-1deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bird-flight {
+  0% {
+    transform: translate(-100px, 40px) scale(0.7);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(calc(100vw + 100px), -60px) scale(0.9);
+    opacity: 0;
+  }
+}
+
+.animate-cloud-slow {
+  animation: float-cloud-slow 40s ease-in-out infinite;
+}
+
+.animate-cloud-medium {
+  animation: float-cloud-medium 28s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 7s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-bird {
+  animation: bird-flight 25s linear infinite;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 248, 236, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(19, 35, 58, 0.08);
+}
+
+.glass-panel-dark {
+  background: rgba(19, 35, 58, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 14px 40px -10px rgba(19, 35, 58, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #9FD3FF;
+  border-radius: 5px;
+  border: 2px solid #FFF8EC;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2F7FD8;
+}

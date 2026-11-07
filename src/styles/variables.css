@@ -1,0 +1,14 @@
+:root {
+  --color-cream: #FFF8EC;
+  --color-navy: #13233A;
+  --color-sky-blue: #2F7FD8;
+  --color-light-blue: #9FD3FF;
+  --color-golden: #FFD23F;
+  --color-coral: #FF6B4A;
+  --color-grass-green: #4F9E4A;
+  --color-lavender: #B7A2FF;
+
+  --font-heading: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-handwriting: 'Caveat', cursive, sans-serif;
+}
